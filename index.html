@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Srinivas Pathlovath — Senior Software Engineer</title>
+<meta name="description" content="Senior Software Engineer, 7+ years in Angular, React, TypeScript and Python APIs. Design systems, micro-frontends, CI/CD. Telecom, finance and e-commerce.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d12;--fg:#e8eaf0;--mut:#8b93a7;--card:#12151d;--line:#222735;--a:#7c5cff;--b:#22d3ee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f7fb;--fg:#12141a;--mut:#5a6275;--card:#fff;--line:#e2e5ee;--a:#5b3df5;--b:#0891b2}}
+:root[data-theme="light"]{--bg:#f6f7fb;--fg:#12141a;--mut:#5a6275;--card:#fff;--line:#e2e5ee;--a:#5b3df5;--b:#0891b2}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,-apple-system,sans-serif}
+a{color:inherit}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:58px}
+nav b{font:700 1rem 'Space Grotesk',sans-serif}
+nav div{display:flex;gap:18px;font-size:.88rem;color:var(--mut);overflow-x:auto}
+nav a{text-decoration:none;white-space:nowrap}nav a:hover{color:var(--fg)}
+.hero{padding:88px 0 56px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-120px;background:radial-gradient(circle,var(--a),transparent 65%);opacity:.28;filter:blur(30px)}
+.kick{font:500 .85rem 'Space Grotesk',monospace;color:var(--b);letter-spacing:.08em}
+h1{font:700 clamp(2.4rem,7vw,4.4rem)/1.04 'Space Grotesk',sans-serif;margin:14px 0 18px;letter-spacing:-.03em}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:640px;color:var(--mut);font-size:1.12rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{font:600 .92rem Inter,sans-serif;padding:11px 20px;border-radius:10px;text-decoration:none;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#fff}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:52px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.stat b{display:block;font:700 1.9rem 'Space Grotesk',sans-serif;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.82rem;color:var(--mut)}
+section{padding:60px 0}
+h2{font:700 1.9rem 'Space Grotesk',sans-serif;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mut);margin:0 0 30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:var(--a)}
+.card h3{font:700 1.2rem 'Space Grotesk',sans-serif;margin:0 0 4px}
+.meta{font-size:.8rem;color:var(--b);margin-bottom:10px}
+.card p{margin:0 0 12px;color:var(--mut);font-size:.95rem}
+.res{display:inline-block;font:600 .85rem Inter,sans-serif;background:color-mix(in srgb,var(--a) 16%,transparent);color:var(--fg);padding:4px 10px;border-radius:8px;margin:0 6px 12px 0}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.74rem;border:1px solid var(--line);border-radius:99px;padding:2px 10px;color:var(--mut)}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 34px 28px}
+.job:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:linear-gradient(90deg,var(--a),var(--b))}
+.job h3{margin:0;font:700 1.15rem 'Space Grotesk',sans-serif}
+.job .when{font-size:.82rem;color:var(--mut);margin:2px 0 10px}
+.job ul{margin:0;padding-left:18px;color:var(--mut);font-size:.95rem}.job li{margin-bottom:6px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.sk .card:hover{transform:none}
+.sk h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--b);margin:0 0 12px}
+.letter{max-width:720px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px 34px;font:1.02rem/1.75 Georgia,'Times New Roman',serif}
+.letter p{margin:0 0 16px}.letter .sig{margin:22px 0 0;font-family:'Space Grotesk',sans-serif;font-weight:700}
+footer{border-top:1px solid var(--line);padding:50px 0 70px;text-align:center;color:var(--mut)}
+footer h2{color:var(--fg)}
+.gx{position:relative;border-radius:22px;overflow:hidden;border:1px solid #2a2f55;background:radial-gradient(ellipse at 45% 45%,#1b1347 0%,#0b0c20 55%,#04050d 100%);color:#eef0ff;box-shadow:0 30px 80px -30px rgba(124,92,255,.55)}
+.gxw{position:relative;height:440px}
+.gxw canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:manipulation}
+.yr{position:absolute;left:18px;top:14px;pointer-events:none}
+.yr b{display:block;font:700 2.6rem/1 'Space Grotesk',sans-serif;background:linear-gradient(90deg,#a89bff,#5ee7ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.yr span{font-size:.74rem;color:#9aa0c8}
+.lg{position:absolute;left:18px;bottom:10px;right:18px;font-size:.72rem;color:#8d93bd;pointer-events:none}
+.gxb{padding:18px 22px 22px;border-top:1px solid #23284d;background:rgba(6,7,18,.62)}
+.gxt{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.gxt button{font:500 .8rem Inter,sans-serif;color:#dfe2ff;background:#151837;border:1px solid #2b3063;border-radius:99px;padding:6px 14px;cursor:pointer}
+.gxt button.on,.gxt #gp{background:linear-gradient(90deg,#7c5cff,#22d3ee);border-color:transparent;color:#fff}
+.gxt input{flex:1;min-width:140px;accent-color:#7c5cff}
+.gxi h3{margin:6px 0 0;font:700 1.2rem 'Space Grotesk',sans-serif}
+.gxi small{color:#22d3ee;font-size:.82rem}
+.gxi ul{margin:10px 0;padding-left:18px;color:#b9bedf;font-size:.92rem}
+.gxi .tg{display:flex;flex-wrap:wrap;gap:6px}
+.gxi .tg span{font-size:.74rem;border:1px solid #2b3063;border-radius:99px;padding:2px 10px;color:#9aa0c8}
+@media (max-width:640px){.gxw{height:400px}}
+@media print{nav,.cta,.hero:before{display:none}:root{--bg:#fff;--fg:#000;--card:#fff;--line:#ccc;--mut:#333}.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>SP.</b><div><a href="#glance">Galaxy</a><a href="#work">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#cover">Cover letter</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="w">
+<div class="kick">&lt;SeniorSoftwareEngineer /&gt; · Hyderabad, India</div>
+<h1>Hi, I'm <span>Srinivas Pathlovath</span>.<br>I build design systems, fast UIs and the APIs behind them.</h1>
+<p class="lead">7+ years in Angular (8–21), React and TypeScript, with backend API work in Python and Node.js. I own projects end to end, from technical design to launch and production support, across design systems, micro-frontends, CI/CD and API integrations. Domain experience in telecom, finance and e-commerce.</p>
+<div class="cta"><a class="btn p" href="#work">View projects</a><a class="btn" href="#contact">Get in touch</a><a class="btn" href="Srinivas_Pathlovath_Resume.pdf" download>Download resume</a></div>
+<div class="stats">
+<div class="stat"><b>7+</b><span>years of experience</span></div>
+<div class="stat"><b>80+</b><span>Angular components in one design system</span></div>
+<div class="stat"><b>40+</b><span>engineers using it</span></div>
+<div class="stat"><b>3d → 2h</b><span>deployment cycle time</span></div>
+</div>
+</div></header>
+
+<section id="glance"><div class="w">
+<h2>Career galaxy</h2><p class="sub">Press play and watch seven years deploy, star by star. Tap any star or chip to open it.</p>
+<div class="gx">
+<div class="gxw" id="gxw"><canvas id="gxc" role="img" aria-label="Animated galaxy. Each star is a company, orbiting planets are skills, rings of dots are real counts."></canvas>
+<div class="yr"><b id="gy">2019</b><span>career timeline</span></div>
+<div class="lg">Stars = companies · planets = skills · dots = real counts (teams, components)</div></div>
+<div class="gxb">
+<div class="gxt"><button id="gp">Play</button><input id="gr" type="range" min="0" max="1000" value="0" aria-label="Timeline"></div>
+<div class="gxt" id="gc"><button class="c" data-id="core">Origin</button><button class="c" data-id="knot">2019 · Knot</button><button class="c" data-id="virtusa">2021 · Virtusa</button><button class="c" data-id="csg">2022 · CSG</button><button class="c" data-id="alter">2025 · Alter Domus</button><button class="c" data-id="certs">Certificates</button></div>
+<div class="gxi" id="gi"></div>
+</div></div>
+</div></section>
+
+<section id="work"><div class="w">
+<h2>Selected projects</h2><p class="sub">What I built, what changed, and the stack behind it.</p>
+<div class="grid">
+
+<div class="card"><h3>Investor Portal Design System</h3><div class="meta">Alter Domus · 2025–Present</div>
+<p>Architected and rolled out a design system that standardizes UX/UI across every investor-facing screen, owned end to end from technical design to production support.</p>
+<span class="res">80+ components</span><span class="res">40+ engineers</span><span class="res">~50% faster builds</span>
+<div class="tags"><span>Angular</span><span>Storybook</span><span>Design tokens</span><span>Private npm</span></div></div>
+
+<div class="card"><h3>Investor Portal Performance</h3><div class="meta">Alter Domus · Lead frontend engineer</div>
+<p>Led the Angular portal from planning through deployment with a junior developer. Reworked the reports experience so heavy reports open in seconds instead of close to a minute.</p>
+<span class="res">Reports 50s → 3s</span><span class="res">Lighthouse 50 → 80</span>
+<div class="tags"><span>Angular</span><span>Performance</span><span>Lighthouse</span></div></div>
+
+<div class="card"><h3>Micro-frontend Platform</h3><div class="meta">CSG Systems International · 2022–2025</div>
+<p>Designed a Webpack Module Federation architecture for an enterprise onboarding and service-management platform, so five teams could ship independently and at the same time.</p>
+<span class="res">5 teams in parallel</span><span class="res">4h → 15min deploys</span>
+<div class="tags"><span>Module Federation</span><span>NgRx</span><span>RxJS</span><span>GraphQL</span></div></div>
+
+<div class="card"><h3>CI/CD Modernization</h3><div class="meta">Alter Domus · Azure DevOps</div>
+<p>Rebuilt the delivery pipeline with automated tests, Storybook validation and semantic versioning, turning a multi-day release into a same-day one.</p>
+<span class="res">~3 days → ~2 hours</span>
+<div class="tags"><span>Azure DevOps</span><span>Semantic versioning</span><span>Jest</span><span>Cypress</span></div></div>
+
+<div class="card"><h3>AI-Assisted Dev Workflow</h3><div class="meta">Alter Domus</div>
+<p>Built a workflow using Claude Code, Cursor, Figma Code Connect and MCP servers to scaffold components, generate unit tests and write documentation, removing repetitive work from feature delivery.</p>
+<div class="tags"><span>Claude Code</span><span>Cursor</span><span>Figma Code Connect</span><span>MCP</span></div></div>
+
+<div class="card"><h3>AngularJS → Angular Migration</h3><div class="meta">Knot Solutions · 2019–2021</div>
+<p>Led the move to Angular 12+ across 15+ teams with a shared component library, NgRx state, GraphQL, i18n in 8 languages and WCAG 2.1 AA accessibility.</p>
+<span class="res">15+ teams</span><span class="res">6h → 45min deploys</span>
+<div class="tags"><span>Angular 12+</span><span>NgRx</span><span>i18n</span><span>WCAG 2.1 AA</span></div></div>
+
+<div class="card"><h3>Shared Libraries (Angular &amp; React)</h3><div class="meta">Cross-project</div>
+<p>Published reusable component libraries in both frameworks, including dynamic JSON-driven forms, dashboards and Google Maps integration, each reused across 8–10 projects.</p>
+<div class="tags"><span>Angular</span><span>React</span><span>npm</span><span>Storybook</span></div></div>
+
+<div class="card"><h3>API Integrations &amp; Backend Services</h3><div class="meta">Full-stack contribution · Python, Node.js</div>
+<p>Alongside frontend work I build and integrate APIs. About 30% of my contribution is backend API development in Python, and I connect Angular and React apps to Node.js services over REST and GraphQL.</p>
+<span class="res">~30% Python API work</span>
+<div class="tags"><span>Python</span><span>Node.js</span><span>Express</span><span>REST</span><span>GraphQL</span></div></div>
+
+<div class="card"><h3>Aircraft MRO Platform</h3><div class="meta">Virtusa · 2021–2022</div>
+<p>Built dashboards and workflow engines in Angular with full Jest and Cypress coverage, then added SSR and optimized GraphQL calls.</p>
+<span class="res">TTI −35%</span><span class="res">0 critical post-launch defects</span>
+<div class="tags"><span>Angular</span><span>SSR</span><span>GraphQL</span><span>Jest</span></div></div>
+
+</div></div></section>
+
+<section id="experience"><div class="w">
+<h2>Experience</h2><p class="sub">Four companies, all in Hyderabad.</p>
+<div class="tl">
+<div class="job"><h3>Senior Software Engineer · Alter Domus</h3><div class="when">Jul 2025 – Present</div><ul>
+<li>Owned the Investor Portal design-system rollout end to end, standardizing UX/UI across investor-facing screens.</li>
+<li>Architected 80+ reusable Angular components (Storybook, design tokens, private npm), adopted by 40+ engineers.</li>
+<li>Modernized the Azure DevOps pipeline, cutting deployment cycle time from ~3 days to ~2 hours.</li>
+<li>Built an AI-assisted workflow with Claude Code, Cursor AI, Figma Code Connect and MCP servers.</li>
+<li>Lead code reviews and mentor a 5-member team on architecture and standards.</li></ul></div>
+<div class="job"><h3>Senior Software Engineer · CSG Systems International</h3><div class="when">Jun 2022 – Jun 2025</div><ul>
+<li>Led Angular development (NgRx, RxJS, Signals, Reactive Forms) for an enterprise onboarding platform with a Node.js backend over REST and GraphQL.</li>
+<li>Designed Module Federation micro-frontends so 5 teams deploy independently, cutting deploys from 4 hours to 15 minutes.</li>
+<li>Built 10+ reusable Angular modules and shared libraries, published as private npm packages.</li>
+<li>Ran sprint planning and technical documentation in Jira and Confluence, turning requirements into technical designs with product, design and backend; owned complex production defects.</li></ul></div>
+<div class="job"><h3>Software Engineer · Virtusa</h3><div class="when">Jul 2021 – Jun 2022</div><ul>
+<li>Built enterprise Angular applications, including dashboards and workflow engines, for an aircraft MRO platform.</li>
+<li>Wrote full Jest and Cypress coverage, with zero critical defects after launch.</li>
+<li>Optimized the GraphQL integration and implemented SSR, cutting Time-to-Interactive by 35%.</li></ul></div>
+<div class="job"><h3>Software Engineer · Knot Solutions</h3><div class="when">May 2019 – Jun 2021</div><ul>
+<li>Led the AngularJS → Angular 12+ modernization across 15+ teams.</li>
+<li>Built the shared component library and moved state management to NgRx and RxJS.</li>
+<li>Integrated GraphQL APIs, added i18n for 8 languages and brought the apps to WCAG 2.1 AA compliance.</li>
+<li>Automated CI/CD with Jenkins, GitHub Actions and Docker, cutting deploys from 6 hours to 45 minutes.</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="w">
+<h2>Skills</h2><p class="sub">Angular first, with working depth in React, Python and Node.js APIs.</p>
+<div class="sk">
+<div class="card"><h3>Frontend</h3><div class="tags"><span>Angular 8–21</span><span>TypeScript</span><span>JavaScript ES6+</span><span>RxJS</span><span>NgRx</span><span>Signals</span><span>Reactive Forms</span><span>Angular CDK</span><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>Responsive design</span><span>SVG animation</span><span>React</span><span>React-Redux</span></div></div>
+<div class="card"><h3>Architecture</h3><div class="tags"><span>Design systems</span><span>Component libraries</span><span>Micro-frontends</span><span>Module Federation</span><span>Dependency injection</span><span>Single Sign-On (SSO)</span><span>Multi-factor authentication</span></div></div>
+<div class="card"><h3>Testing &amp; quality</h3><div class="tags"><span>TDD</span><span>Jest</span><span>Cypress</span><span>Jasmine</span><span>Karma</span><span>Protractor (e2e)</span><span>WCAG 2.1 AA</span><span>Performance</span></div></div>
+<div class="card"><h3>Backend &amp; ecosystem</h3><div class="tags"><span>Python (API development)</span><span>Node.js</span><span>Express</span><span>REST</span><span>GraphQL</span><span>gRPC</span><span>API integrations</span><span>JSON</span><span>AJAX</span><span>XML</span><span>SSR</span><span>npm publishing</span></div></div>
+<div class="card"><h3>DevOps</h3><div class="tags"><span>CI/CD</span><span>Azure DevOps (ADO)</span><span>GitHub Actions</span><span>Jenkins</span><span>Docker</span><span>Release automation</span></div></div>
+<div class="card"><h3>AI tools &amp; workflows</h3><div class="tags"><span>Claude Code</span><span>Cursor AI</span><span>Figma Code Connect</span><span>MCP servers</span><span>Agentic workflows</span><span>LLM integration</span><span>Prompt engineering</span><span>AI-assisted scaffolding, tests &amp; docs</span></div></div>
+<div class="card"><h3>UI libraries &amp; charts</h3><div class="tags"><span>Angular Material</span><span>Bootstrap 3/4</span><span>SemanticUI</span><span>Materialize</span><span>Chart.js</span><span>D3.js (with Angular)</span></div></div>
+<div class="card"><h3>Also worked with</h3><div class="tags"><span>jQuery</span><span>macOS</span><span>Windows</span><span>Linux</span><span>XAMPP</span><span>TeamViewer</span></div></div>
+<div class="card"><h3>Domain knowledge</h3><div class="tags"><span>Telecom</span><span>Finance</span><span>E-commerce</span><span>Aircraft MRO</span></div></div>
+<div class="card"><h3>Tools &amp; leadership</h3><div class="tags"><span>Jira</span><span>Confluence</span><span>Sprint planning</span><span>Technical documentation</span><span>Bitbucket</span><span>Code reviews</span><span>Mentoring</span><span>Agile methodologies</span><span>Project management</span><span>Problem solving</span></div></div>
+</div>
+<p class="sub" style="margin-top:30px">Education: B.Tech, Computer Science &amp; Engineering, JB Institute of Engineering &amp; Technology. Training: AI Engineering for Developers (MCP, agentic workflows), Frontend System Design.</p>
+</div></section>
+
+<section id="cover"><div class="w">
+<h2>Cover letter</h2><p class="sub">Why I do this work and what I'd bring to your team.</p>
+<div class="letter">
+<p>Dear Hiring Manager,</p>
+<p>I'm a Senior Software Engineer with seven years of experience building enterprise applications, mainly in Angular and React, with a share of backend API work in Python and Node.js. I'm writing to explore senior and staff-level software engineering roles with your team.</p>
+<p>The work I'm proudest of is the kind other engineers rely on. At Alter Domus I architected a design system of 80+ Angular components, now used by 40+ engineers, and modernized the Azure DevOps pipeline so a release that took about three days now takes about two hours. At CSG Systems International I designed a Module Federation micro-frontend architecture that let five teams deploy independently, cutting a four-hour deployment to fifteen minutes.</p>
+<p>I own projects from technical design through launch and production support. I plan sprints and write technical documentation in Jira and Confluence, and I ship through CI/CD pipelines built on Azure DevOps and GitHub Actions, with automated tests, Storybook validation and semantic versioning. I integrate frontends with REST and GraphQL APIs, and about 30% of my contribution is backend API development in Python.</p>
+<p>I bring domain knowledge in telecom, finance and e-commerce, and I work closely with design, product and backend teams so UX and API questions are settled before release. I've also built an AI-assisted workflow with Claude Code, Cursor and MCP servers to speed up scaffolding, tests and documentation without lowering the review bar. I also review code and mentor engineers.</p>
+<p>I'd welcome a conversation about where my experience with design systems, delivery tooling and API integrations could help your product. Thank you for your time and consideration.</p>
+<p class="sig">Srinivas Pathlovath<br><span style="font-weight:400;color:var(--mut)">Senior Software Engineer · Hyderabad, India</span></p>
+</div>
+</div></section>
+
+<footer id="contact"><div class="w">
+<h2>Let's talk</h2><p>Open to senior and staff-level software engineering roles in Hyderabad and Bangalore.</p>
+<div class="cta" style="justify-content:center">
+<a class="btn p" href="mailto:pathlovathsrinivas165@gmail.com">Email me</a>
+<a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+<a class="btn" href="Srinivas_Pathlovath_Resume.pdf" download>Resume (PDF)</a></div>
+</div></footer>
+<script>
+(function(){
+var cv=document.getElementById('gxc'),ctx=cv.getContext('2d'),wrap=document.getElementById('gxw'),gp=document.getElementById('gp'),gr=document.getElementById('gr'),gy=document.getElementById('gy'),gi=document.getElementById('gi');
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var DUR=18,Y0=2019.4,Y1=2026.75,CT=.93,t=0,now=0,spin=0,playing=false,vis=false,started=false,raf=0,last=0,sel='core',W=0,H=0,R=0,flat=1,u=1,cx=0,cy=0,hits=[];
+var SYS=[
+{id:'knot',s:'Knot',y:'2019',tb:.035,r:.34,a:.6,h:190,pl:['Angular','NgRx','RxJS','GraphQL','i18n'],n:15,pop:'15+ teams migrated'},
+{id:'virtusa',s:'Virtusa',y:'2021',tb:.286,r:.52,a:2.6,h:150,pl:['Angular','Jest','Cypress','SSR','GraphQL'],n:0,pop:'Time-to-Interactive −35%'},
+{id:'csg',s:'CSG',y:'2022',tb:.415,r:.68,a:4.3,h:35,pl:['Module Federation','NgRx','Signals','Node.js','GraphQL'],n:5,pop:'Deploys 4h → 15 min'},
+{id:'alter',s:'Alter Domus',y:'2025',tb:.83,r:.82,a:5.5,h:280,pl:['Storybook','Design tokens','Azure DevOps','Claude Code','MCP'],n:80,pop:'80+ components · 40+ engineers'}];
+var CERT=[[.82,.15],[.92,.24],[.86,.33]];
+var INFO={
+core:{t:'Origin: B.Tech, Computer Science &amp; Engineering',s:'JB Institute of Engineering &amp; Technology, Hyderabad',b:['7+ years across four companies, all in Hyderabad','Angular 8–21 first, with React, TypeScript, Python and Node.js APIs','Domains: telecom, finance, e-commerce, aircraft MRO'],g:['Angular','React','TypeScript','Python','Node.js','Design systems','CI/CD']},
+knot:{t:'Software Engineer · Knot Solutions',s:'May 2019 – Jun 2021',b:['Led the AngularJS → Angular 12+ modernization across 15+ teams','Built the shared component library for the migrated applications','Moved state management to NgRx and RxJS','Integrated GraphQL APIs into the Angular apps','Added i18n support for 8 languages','Brought the applications to WCAG 2.1 AA accessibility compliance','Automated CI/CD with Jenkins, GitHub Actions and Docker: deploys 6 hours → 45 minutes'],g:['Angular 12+','NgRx','RxJS','GraphQL','i18n','WCAG 2.1 AA','Jenkins','GitHub Actions','Docker']},
+virtusa:{t:'Software Engineer · Virtusa',s:'Jul 2021 – Jun 2022',b:['Built enterprise Angular applications for an aircraft MRO (maintenance, repair and overhaul) platform','Delivered dashboards and workflow engines','Wrote full Jest and Cypress test coverage','Zero critical defects after launch','Optimized the GraphQL integration','Implemented server-side rendering (SSR)','Cut Time-to-Interactive by 35%'],g:['Angular','SSR','GraphQL','Jest','Cypress','Aircraft MRO']},
+csg:{t:'Senior Software Engineer · CSG Systems International',s:'Jun 2022 – Jun 2025 · telecom customer-onboarding platform',b:['Module Federation micro-frontends: 5 teams deploy independently, 4 hours → 15 minutes','10+ reusable Angular modules published as private npm packages','Sprint planning and technical design in Jira and Confluence; REST and GraphQL with a Node.js backend'],g:['Module Federation','NgRx','Signals','Reactive Forms','Jira','Confluence','Node.js']},
+alter:{t:'Senior Software Engineer · Alter Domus',s:'Jul 2025 – Present · Investor Portal',b:['Design system of 80+ Angular components used by 40+ engineers, build time roughly halved','Azure DevOps pipeline rebuilt: ~3 days → ~2 hours','Reports load time 50s → 3s, Lighthouse 50 → 80','AI-assisted workflow with Claude Code, Cursor, Figma Code Connect and MCP servers'],g:['Storybook','Design tokens','Azure DevOps','Private npm','Claude Code','Cursor','MCP']},
+certs:{t:'Certificates &amp; continuous learning',s:'Courses completed',b:['AI Engineering for Developers: MCP, agentic workflows, LLM integration, prompt engineering','Frontend System Design: architecture patterns, scalability, design tokens','Jira &amp; Confluence Fundamentals: Udemy, self-paced'],g:['MCP','Agentic workflows','System design','Jira','Confluence']}};
+var TT={core:.02,knot:.095,virtusa:.346,csg:.475,alter:.89,certs:.99};
+function E(k){return 1-Math.pow(1-k,3)}function C(v){return Math.max(0,Math.min(1,v))}
+var GP=[[],[],[]],COL=['#9b8cff','#5ee7ff','#ffffff'],AL=[.5,.45,.7],BS=[],i;
+for(i=0;i<900;i++){var r0=Math.pow(Math.random(),.85),a0=(i%3)*2.0944+r0*5+(Math.random()-.5)*(.7*(1-r0)+.2),c0=Math.random()<.5?0:(Math.random()<.6?1:2);GP[c0].push([r0,a0,Math.random()<.1?2:1.2])}
+for(i=0;i<170;i++)BS.push([Math.random(),Math.random(),Math.random()*1.4+.3,Math.random()*6.28]);
+function size(){W=wrap.clientWidth;H=wrap.clientHeight;var d=Math.min(2,window.devicePixelRatio||1);cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0);cx=W*.45;cy=H*.54;R=Math.min(W*.4,H*1.1);flat=Math.min(.9,H*.4/R);u=Math.max(.55,Math.min(1,W/700))}
+function pos(sy,sc){var a=sy.a+spin;return[cx+Math.cos(a)*sy.r*R*sc,cy+Math.sin(a)*sy.r*R*sc*flat]}
+function draw(){
+ctx.clearRect(0,0,W,H);hits=[];
+var sc=.4+.6*E(C(t/.9)),j,g,k;
+ctx.globalCompositeOperation='lighter';
+for(i=0;i<BS.length;i++){var b=BS[i];ctx.globalAlpha=.25+.5*Math.abs(Math.sin(now*.9+b[3]));ctx.fillStyle='#fff';ctx.fillRect(b[0]*W,b[1]*H,b[2],b[2])}
+for(var c=0;c<3;c++){ctx.fillStyle=COL[c];ctx.globalAlpha=AL[c];g=GP[c];for(i=0;i<g.length;i++){var p=g[i],a=p[1]+spin;ctx.fillRect(cx+Math.cos(a)*p[0]*R*sc,cy+Math.sin(a)*p[0]*R*sc*flat,p[2],p[2])}}
+var cr=(34*sc+10)*(1+.08*Math.sin(now*2)),gg=ctx.createRadialGradient(cx,cy,0,cx,cy,cr);
+gg.addColorStop(0,'rgba(255,255,255,1)');gg.addColorStop(.3,'rgba(168,155,255,.7)');gg.addColorStop(1,'rgba(124,92,255,0)');
+ctx.globalAlpha=1;ctx.fillStyle=gg;ctx.beginPath();ctx.arc(cx,cy,cr,0,6.283);ctx.fill();
+var bd=t*DUR;if(bd<2){ctx.globalAlpha=(1-bd/2)*.7;ctx.strokeStyle='#a89bff';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(cx,cy,bd*110,bd*110*flat,0,0,6.283);ctx.stroke()}
+hits.push({id:'core',x:cx,y:cy,r:20});
+ctx.globalCompositeOperation='source-over';
+ctx.setLineDash([3,6]);ctx.strokeStyle='rgba(168,155,255,.35)';ctx.lineWidth=1;ctx.globalAlpha=1;ctx.beginPath();ctx.moveTo(cx,cy);
+SYS.forEach(function(sy){if(t>=sy.tb){var q=pos(sy,sc);ctx.lineTo(q[0],q[1])}});ctx.stroke();ctx.setLineDash([]);
+ctx.textAlign='center';
+if(t<.92)ctx.font='600 10px Inter,system-ui,sans-serif',ctx.fillStyle='rgba(220,224,255,.7)',ctx.fillText('B.Tech',cx,cy+26*u+8);
+SYS.forEach(function(sy){
+if(t<sy.tb)return;
+var dt=(t-sy.tb)*DUR,q=pos(sy,sc),x=q[0],y=q[1],kk=E(C(dt/.9)),col='hsl('+sy.h+',90%,70%)',on=sel===sy.id;
+hits.push({id:sy.id,x:x,y:y,r:22});
+ctx.globalCompositeOperation='lighter';
+if(dt<1.8){ctx.globalAlpha=(1-dt/1.8)*.8;ctx.strokeStyle=col;ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(x,y,dt*80*u,dt*80*u*flat,0,0,6.283);ctx.stroke()}
+var rad=24*kk*(.6+.4*u)+(dt<.6?(.6-dt)*50:0),g2=ctx.createRadialGradient(x,y,0,x,y,Math.max(1,rad));
+g2.addColorStop(0,'#fff');g2.addColorStop(.25,col);g2.addColorStop(1,'hsla('+sy.h+',90%,60%,0)');
+ctx.globalAlpha=1;ctx.fillStyle=g2;ctx.beginPath();ctx.arc(x,y,Math.max(1,rad),0,6.283);ctx.fill();
+ctx.globalCompositeOperation='source-over';
+sy.pl.forEach(function(nm,m){
+var oa=now*(.55-m*.07)+m*1.9,orr=(17+m*6.5)*u,px=x+Math.cos(oa)*orr,py=y+Math.sin(oa)*orr*.6;
+ctx.globalAlpha=.14*kk;ctx.strokeStyle='#fff';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(x,y,orr,orr*.6,0,0,6.283);ctx.stroke();
+ctx.globalAlpha=kk;ctx.fillStyle='hsl('+((sy.h+m*25)%360)+',85%,72%)';ctx.beginPath();ctx.arc(px,py,2.6,0,6.283);ctx.fill();
+if(on){ctx.font='500 10px Inter,system-ui,sans-serif';ctx.fillStyle='rgba(235,238,255,.9)';ctx.textAlign='left';ctx.fillText(nm,px+5,py-4);ctx.textAlign='center'}});
+if(sy.n){var vn=Math.round(sy.n*E(C((dt-.3)/2.4))),n1=sy.n>40?40:sy.n,rb=(sy.n>40?56:52)*u,sz=sy.n===5?3:1.5;
+ctx.fillStyle='#fff';ctx.globalAlpha=.85;
+for(j=0;j<vn;j++){var rg=j<n1?0:1,mm=rg?sy.n-n1:n1,jj=rg?j-n1:j,aa=now*.22*(rg?-1:1)+jj*6.283/mm,rr=rg?rb+7:rb;ctx.fillRect(x+Math.cos(aa)*rr-sz/2,y+Math.sin(aa)*rr*.6-sz/2,sz,sz)}}
+ctx.globalAlpha=kk;ctx.font='600 11px Inter,system-ui,sans-serif';ctx.fillStyle='rgba(240,242,255,.95)';ctx.fillText(sy.y+' · '+sy.s,x,y+58*u*.6+14);
+if(on){ctx.globalAlpha=.9;ctx.strokeStyle='#fff';ctx.lineWidth=1.2;ctx.beginPath();ctx.arc(x,y,11,0,6.283);ctx.stroke()}
+if(dt<3.2||on){ctx.globalAlpha=on?.95:C((3.2-dt)/1);ctx.font='700 13px Inter,system-ui,sans-serif';ctx.shadowColor=col;ctx.shadowBlur=10;ctx.fillStyle='#fff';ctx.fillText(sy.pop,x,y-30*u-(on?0:dt*5));ctx.shadowBlur=0}
+ctx.globalAlpha=1});
+var nc=0,cp=[];
+CERT.forEach(function(q,k2){var tb=CT+k2*.015;if(t<tb)return;nc++;var dt=(t-tb)*DUR,x=q[0]*W,y=q[1]*H,kk=E(C(dt/.8)),tw=.7+.3*Math.sin(now*3+k2);cp.push([x,y]);
+hits.push({id:'certs',x:x,y:y,r:18});
+ctx.globalCompositeOperation='lighter';
+if(dt<1.4){ctx.globalAlpha=(1-dt/1.4)*.8;ctx.strokeStyle='#ffd479';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,dt*40,0,6.283);ctx.stroke()}
+var g3=ctx.createRadialGradient(x,y,0,x,y,18*kk*tw+1);g3.addColorStop(0,'#fff');g3.addColorStop(.3,'#ffd479');g3.addColorStop(1,'rgba(255,212,121,0)');ctx.globalAlpha=1;ctx.fillStyle=g3;ctx.beginPath();ctx.arc(x,y,18*kk*tw+1,0,6.283);ctx.fill();
+ctx.globalCompositeOperation='source-over';ctx.globalAlpha=.9;ctx.strokeStyle='#fff';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x-8*kk,y);ctx.lineTo(x+8*kk,y);ctx.moveTo(x,y-8*kk);ctx.lineTo(x,y+8*kk);ctx.stroke()});
+if(nc>1){ctx.globalAlpha=.3;ctx.strokeStyle='#ffd479';ctx.lineWidth=1;ctx.beginPath();cp.forEach(function(q,k2){k2?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1])});ctx.stroke()}
+if(nc===3){ctx.globalAlpha=.9;ctx.font='600 11px Inter,system-ui,sans-serif';ctx.fillStyle='#ffe3a3';ctx.fillText('Certificates',.87*W,.07*H)}
+ctx.globalAlpha=1;
+gy.textContent=t>=1?'Now':Math.floor(Y0+t*(Y1-Y0));
+}
+function setInfo(id){var d=INFO[id];gi.innerHTML='<h3>'+d.t+'</h3><small>'+d.s+'</small><ul>'+d.b.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul><div class="tg">'+d.g.map(function(x){return'<span>'+x+'</span>'}).join('')+'</div>';
+document.querySelectorAll('#gc .c').forEach(function(b){b.classList.toggle('on',b.dataset.id===id)})}
+function latest(){if(t>=CT)return'certs';for(var k=SYS.length-1;k>=0;k--)if(t>=SYS[k].tb)return SYS[k].id;return'core'}
+function sync(){var id=latest();if(id!==sel){sel=id;setInfo(id)}}
+function ui(){gp.textContent=playing?'Pause':(t>=1?'Replay':'Play');gr.value=Math.round(t*1000)}
+function frame(ts){if(!vis){raf=0;return}var d=last?Math.min(.05,(ts-last)/1000):0;last=ts;now+=d;if(!rm)spin+=d*.05;
+if(playing){t+=d/DUR;if(t>=1){t=1;playing=false}sync();ui()}
+draw();raf=requestAnimationFrame(frame)}
+function run(){if(vis&&!raf){last=0;raf=requestAnimationFrame(frame)}}
+gp.onclick=function(){if(playing){playing=false}else{if(t>=1)t=0;playing=true;sync()}ui();run()};
+gr.oninput=function(){playing=false;t=gr.value/1000;sync();ui()};
+document.querySelectorAll('#gc .c').forEach(function(b){b.onclick=function(){var id=b.dataset.id;playing=false;t=TT[id];sel=id;setInfo(id);ui()}});
+function hit(e){var rc=cv.getBoundingClientRect(),x=e.clientX-rc.left,y=e.clientY-rc.top;for(var k=hits.length-1;k>=0;k--){var h=hits[k];if(Math.hypot(h.x-x,h.y-y)<=h.r+6)return h}return null}
+cv.onclick=function(e){var h=hit(e);if(h){playing=false;sel=h.id;setInfo(h.id);ui()}};
+cv.onmousemove=function(e){cv.style.cursor=hit(e)?'pointer':'default'};
+window.addEventListener('resize',size);
+size();setInfo('core');
+new IntersectionObserver(function(es){vis=es[0].isIntersecting;if(vis){if(!started){started=true;if(rm){t=1;sync();ui()}else{playing=true;ui()}}run()}},{threshold:.3}).observe(wrap);
+})();
+</script>
+</body>
+</html>
